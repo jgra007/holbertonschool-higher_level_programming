@@ -1,23 +1,15 @@
 #!/usr/bin/python3
-"""This is  the "text_indentation" function.
-The text_indentation function formating text. For example,
->>> text_indentation(Non autem hoc: igitur ne illud)
+"""
+module to remove whitespace and add newlines to text
 """
 
 
 def text_indentation(text):
-    """This function formating text.
-    Return the result in new text.
-    Raise Error if data is diferrent."""
-    if type(text) is not str:
-        raise TypeError("text must be a string")
-    x = 0
-    check = False
-    for i in range(len(text)):
-        if text[i] in [".", ":", "?"]:
-            print(text[x : i + 1])
-            print()
-            x = i + 2
-            bool = True
-    if i + 1 == len(text) and bool is False:
-        print(text)
+    """ removes whitespace at start & end of each line and adds newlines"""
+    if not isinstance(text, str):
+        raise TypeError('text must be a string')
+    for c in ['.', '?', ':']:
+        text = text.replace(c, c + '\n\n')
+    new = [line.strip() for line in text.split('\n')]
+    new = '\n'.join(new)
+    print(new, end='')
