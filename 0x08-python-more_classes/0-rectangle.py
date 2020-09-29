@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""rectangle module"""
+""" Rectangle Module """
 
 
-class Rectanlge:
-    """this is a Rectangle Class (it defines a REctangle)"""
+class Rectangle:
+    """ This is a Rectangle Class (it defines a rectangle) """
     pass
