@@ -1,21 +1,28 @@
 #!/usr/bin/python3
+"""Simple addition
+"""
+
+
 def add_integer(a, b=98):
+    """Adds two variables and returns an int
+    Arguments:
+        a {int or float} -- variable containing a number
+    Keyword Arguments:
+        b {int or float} -- variable containing a number (default: {98})
+    Raises:
+        TypeError: In the case that input arguement is not an int
+        TypeError: In the case that input arguement is not an int
+    Returns:
+        int -- Result of the addition
     """
-    This function sum a and b.
-    Return the result int datatype.
-    Raise TypeError if data is diferrent that int.
-    """
-    if not (isinstance(a, int) or isinstance(a, float)):
+    result = 0
+    if type(a) != float and type(a) != int:
         raise TypeError("a must be an integer")
-
-    if not (isinstance(b, int) or isinstance(b, float)):
+    if type(b) != float and type(b) != int:
         raise TypeError("b must be an integer")
-
-    if isinstance(a, float) or isinstance(a, int):
+    if type(a) == float:
         a = int(a)
-
-    if isinstance(b, float) or isinstance(b, int):
+    if type(b) == float:
         b = int(b)
-
-    if isinstance(a, int) and isinstance(b, int):
-        return int(a + b)
+    result = a + b
+    return result
