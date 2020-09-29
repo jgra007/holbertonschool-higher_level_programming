@@ -58,7 +58,7 @@ Test cases:
 
     # case5: 'matrix' data must be int/float type only.
     ---------------------------------------------------
-    >>> print(matrix_divided([[1, 2, 'a'], [4, 5, 6]], 3))
+    >>> print(matrix_divided([[1, 2, ''a''], [4, 5, 6]], 3))
     Traceback (most recent call last):
     ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
@@ -112,9 +112,3 @@ Test cases:
     Traceback (most recent call last):
     ...
     TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
-
-    Should return an error:
-    >>> matrix_divided([[1, "H", 3], [4.1, 5, 6.8]], 11)
-    Traceback (most recent call last):
-    ...
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
