@@ -1,27 +1,31 @@
-Test for ``say_my_name`` function
-=================================
-
-Import function ``say_my_name``
----------------------------------
-
-This is an test file, for say_my_name function:
-
-Test 1 - check import ok:
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
-Test say_my_name:
-------------------
+>>> say_my_name("John", "Smith")
+My name is John Smith
 
-  >>> say_my_name("Camilo")
-	My name is Camilo
+>>> say_my_name("Walter", "White")
+My name is Walter White
 
-	>>> say_my_name([])
-	Traceback (most recent call last):
-	TypeError: first_name must be a string
+>>> say_my_name("Bob")
+My name is Bob 
 
-	>>> say_my_name({})
-	Traceback (most recent call last):
-	TypeError: first_name must be a string
+>>> say_my_name("J34n", "P3r3z")
+My name is J34n P3r3z
 
-	>>> say_my_name("")
-	My name is
+>>> try:
+...     say_my_name(12, "White")
+... except Exception as e:
+...     print(e)
+first_name must be a string
+
+>>> try:
+...     say_my_name(None, "White")
+... except Exception as e:
+...     print(e)
+first_name must be a string
+
+>>> try:
+...     say_my_name("John", 123)
+... except Exception as e:
+...     print(e)
+last_name must be a string
