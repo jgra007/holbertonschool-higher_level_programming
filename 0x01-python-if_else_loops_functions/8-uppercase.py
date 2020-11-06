@@ -1,4 +1,4 @@
-#1/usr/bin/python3
+#!/usr/bin/python3
 def uppsercase(str):
     for i in str:
         i = ord(i)
