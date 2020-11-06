@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def uppsercase(str):
+def uppercase(str):
     for i in str:
         i = ord(i)
         if i >= ord(i) and i <= 122:
