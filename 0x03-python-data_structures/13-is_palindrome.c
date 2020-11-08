@@ -19,7 +19,6 @@ int isPalindromeUtil(listint_t **left, listint_t *right)
 	return isp1;
 }
 
-// A wrapper over isPalindromeUtil()
 int is_palindrome(listint_t **head)
 {
 	return (isPalindromeUtil(head, *head));
