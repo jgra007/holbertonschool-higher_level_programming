@@ -6,7 +6,7 @@ if number > 0:
     number2 = number % 10
 
 else:
-    number2 = (-number % 10) * -1
+    number2 = (-number % 10)* -1
 print("Last digit of", end=' ')
 if number2 > 5:
     print("{:d} is {:d} and is greater than 5".format(number, number2))
