@@ -7,5 +7,5 @@ if __name__ == "__main__":
                                     (':' if l == 2 else 's:')))
     i = 1
     for arg in sys.argv[1:]:
-        print("{:d}: {}".format(i, arg))
+        print("{:d}: {:}".format(i, arg))
         i += 1
