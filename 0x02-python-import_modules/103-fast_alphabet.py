@@ -1,2 +1,3 @@
-#!/usr/bin/python3.4
-import upperalph
+#!/usr/bin/python3
+import string
+print(string.ascii_uppercase)
