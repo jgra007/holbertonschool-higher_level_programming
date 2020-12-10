@@ -1,2 +1,2 @@
-#!/usr/bin/python3.4
-import pront
+#!/usr/bin/python3
+import pythoniscool

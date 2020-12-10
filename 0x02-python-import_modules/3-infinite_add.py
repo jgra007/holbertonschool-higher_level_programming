@@ -10,5 +10,5 @@ if __name__ == "__main__":
         sum = 0
         for x in range(1, len(sys.argv)):
             a = int(sys.argv[x])
-            sum = sum + a
+            sum += a
         print(sum)
