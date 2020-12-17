@@ -1,7 +1,4 @@
 #!/usr/bin/python3
+import functools
 def uniq_add(my_list=[]):
-    n_list = set(my_list)
-    result = 0
-    for a in n_list:
-        result += a
-    return result
+    return functools.reduce(lambda x, y: x + y, set(my_list))
