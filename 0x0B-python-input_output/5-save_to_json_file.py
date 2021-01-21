@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-'''Module for task 5'''
+'''Module for task 7'''
 import json
 
 
-def to_json_string(my_obj):
-    '''Returns the JSON representation of an object (string)'''
-    return json.dumps(my_obj)
+def save_to_json_file(my_obj, filename):
+    '''Writes an Object to a text file'''
+    with open(filename, 'w') as f:
+        json_data = json.dumps(my_obj)
+        f.write(json_data)
