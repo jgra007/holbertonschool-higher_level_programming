@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-'''Module for task 6'''
+'''Module for task 5'''
 import json
 
 
-def from_json_string(my_str):
-    '''Returns an object from a json'''
-    return json.loads(my_str)
+def to_json_string(my_obj):
+    '''Returns the JSON representation of an object (string)'''
+    return json.dumps(my_obj)
