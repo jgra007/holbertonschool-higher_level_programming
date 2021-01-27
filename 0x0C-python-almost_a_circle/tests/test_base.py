@@ -2,7 +2,6 @@
 """Module for test Base class"""
 import json
 import unittest
-import pep8
 
 from models import base
 
@@ -104,12 +103,6 @@ class TestBase(unittest.TestCase):
     def test_2_json(self):
         """Static method 2 json"""
         from models.rectangle import Rectangle
-
-        def test_pep8_rectangle(self):
-            '''Testing pep8 style'''
-            pep8style = pep8.styleguide(quiet=True)
-            resutl = pep8style.check_files(['models/rectangle.py'])
-            self.assertEqual(result.total_errors, 0)
 
         rect = Rectangle(10, 7, 2, 8, 1)
         dictionary = rect.to_dictionary()
