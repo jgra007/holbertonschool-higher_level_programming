@@ -1,7 +1,11 @@
 #!/usr/bin/node
 
-// Script that prints the addition of 2 integers
-function add (a, b) {
-    console.log(parseInt(a) + parseInt(b));
-  }
-  add(process.argv[2], process.argv[3]);
+const a = process.argv[2];
+const b = process.argv[3];
+let c;
+const suma = (a, b) => {
+  c = parseInt(a) + parseInt(b);
+  console.log(c);
+};
+
+suma(a, b);
