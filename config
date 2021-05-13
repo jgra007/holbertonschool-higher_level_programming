@@ -1,0 +1,14 @@
+Host web-01
+Hostname 54.90.162.172
+User ubuntu
+PubkeyAuthentication yes
+
+Host web-02
+Hostname 52.90.60.120
+User ubuntu
+PubkeyAuthentication yes
+
+Host lb-01
+Hostname 34.73.134.148
+User ubuntu
+PubkeyAuthentication yes
